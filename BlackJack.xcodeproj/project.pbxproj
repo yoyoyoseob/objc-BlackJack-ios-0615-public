@@ -20,6 +20,9 @@
 		440FE75B19464F8000C45D87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 440FE75919464F8000C45D87 /* InfoPlist.strings */; };
 		440FE7671946513900C45D87 /* PlayingCardDeckSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 440FE7661946513900C45D87 /* PlayingCardDeckSpec.m */; };
 		440FE77A1949037A00C45D87 /* BlackjackGameSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 440FE7791949037A00C45D87 /* BlackjackGameSpec.m */; };
+		717595BE1B2875570048024F /* FISPlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 717595BD1B2875570048024F /* FISPlayingCard.m */; };
+		717595C11B28773D0048024F /* FISPlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 717595C01B28773D0048024F /* FISPlayingCardDeck.m */; };
+		717595C41B288A7D0048024F /* FISBlackjackGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 717595C31B288A7D0048024F /* FISBlackjackGame.m */; };
 		E2FEB8371B14F19C004A0BCC /* PlayingCardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E2FEB8361B14F19C004A0BCC /* PlayingCardSpec.m */; };
 		F2972237E7DA49A6905DFEE3 /* libPods-BlackJackTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5005EF7FF844B7FA7EAB2DC /* libPods-BlackJackTests.a */; };
 /* End PBXBuildFile section */
@@ -52,6 +55,12 @@
 		440FE75A19464F8000C45D87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		440FE7661946513900C45D87 /* PlayingCardDeckSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeckSpec.m; sourceTree = "<group>"; };
 		440FE7791949037A00C45D87 /* BlackjackGameSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlackjackGameSpec.m; sourceTree = "<group>"; };
+		717595BC1B2875570048024F /* FISPlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISPlayingCard.h; sourceTree = "<group>"; };
+		717595BD1B2875570048024F /* FISPlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISPlayingCard.m; sourceTree = "<group>"; };
+		717595BF1B28773D0048024F /* FISPlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISPlayingCardDeck.h; sourceTree = "<group>"; };
+		717595C01B28773D0048024F /* FISPlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISPlayingCardDeck.m; sourceTree = "<group>"; };
+		717595C21B288A7D0048024F /* FISBlackjackGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISBlackjackGame.h; sourceTree = "<group>"; };
+		717595C31B288A7D0048024F /* FISBlackjackGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISBlackjackGame.m; sourceTree = "<group>"; };
 		A70BF232F0013BAA10CE4E9D /* Pods-BlackJackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackJackTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlackJackTests/Pods-BlackJackTests.release.xcconfig"; sourceTree = "<group>"; };
 		E2FEB8361B14F19C004A0BCC /* PlayingCardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardSpec.m; sourceTree = "<group>"; };
 		E5005EF7FF844B7FA7EAB2DC /* libPods-BlackJackTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlackJackTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +129,12 @@
 			children = (
 				440FE74619464F8000C45D87 /* FISAppDelegate.h */,
 				440FE74719464F8000C45D87 /* FISAppDelegate.m */,
+				717595BC1B2875570048024F /* FISPlayingCard.h */,
+				717595BD1B2875570048024F /* FISPlayingCard.m */,
+				717595BF1B28773D0048024F /* FISPlayingCardDeck.h */,
+				717595C01B28773D0048024F /* FISPlayingCardDeck.m */,
+				717595C21B288A7D0048024F /* FISBlackjackGame.h */,
+				717595C31B288A7D0048024F /* FISBlackjackGame.m */,
 				440FE73F19464F8000C45D87 /* BlackJack-Info.plist */,
 				440FE74019464F8000C45D87 /* InfoPlist.strings */,
 				440FE74319464F8000C45D87 /* main.m */,
@@ -298,7 +313,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				440FE74419464F8000C45D87 /* main.m in Sources */,
+				717595BE1B2875570048024F /* FISPlayingCard.m in Sources */,
+				717595C11B28773D0048024F /* FISPlayingCardDeck.m in Sources */,
 				440FE74819464F8000C45D87 /* FISAppDelegate.m in Sources */,
+				717595C41B288A7D0048024F /* FISBlackjackGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
